@@ -74,7 +74,7 @@ def add(num_1: int, num_2: int, num_3: int) -> int:
 
 
 # Unit testing
-class TestMathFunctions(unittest.TestCase):
+class TestFunctions(unittest.TestCase):
     """Class that will test all the math related functions."""
 
     def test_connect_to_db(self):
