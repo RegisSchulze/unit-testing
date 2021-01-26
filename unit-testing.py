@@ -29,9 +29,7 @@ def connect_to_db(connection_string: str):
     db = mock.MagicMock()  # mock db connection
 
     print("connection string: ", connection_string)
-    if connection_string == "mock":
-        pass
-    elif connection_string == "test":
+    if connection_string == "test":
         raise TestDbError("ERROR: YOU FORGOT TO MOCK connect_to_db")
     else:
         raise ConnectionDatabaseError("Can't connect to the database!")
@@ -86,7 +84,7 @@ class TestMathFunctions(unittest.TestCase):
             connect_to_db("testing")
 
     def test_get_users_list_from_db(self):
-        users = get_users_list_from_db("mock")
+        users = get_users_list_from_db("test users list")
         #print(f'users: {len(users)}')
         assert len(users) >= 20  # verify if number of users in database is at least 20
         for user in users:
