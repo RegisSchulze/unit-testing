@@ -88,11 +88,11 @@ class TestMathFunctions(unittest.TestCase):
     def test_get_users_list_from_db(self):
         users = get_users_list_from_db("mock")
         print(f'users: {len(users)}')
-        assert len(users) >= 20
+        assert len(users) >= 20  # verify if number of users in database is at least 20
         for user in users:
             for j in user.values():
                 #print(f'value:{j}')
-                assert j != ''
+                assert j != ''  # verify that each user has a username, birthday and role
 
     def test_add(self):
         """
