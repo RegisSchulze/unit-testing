@@ -5,11 +5,11 @@ from unittest import mock
 from typing import List, Dict
 
 
-class ConnectionDatabaseError(Exception):  # dit zo laten
+class ConnectionDatabaseError(Exception):
     pass
 
 
-class TestDbError(Exception):  # dit zo laten
+class TestDbError(Exception):  
     pass
 
 
