@@ -26,3 +26,9 @@ You see all the seniors of your company debugging all day and being mad at their
 Your project manager asks you to write unit tests to fix the problem.
 
 The code can be found under the unit-testing.py
+
+The test_connect_to_db and test_add should work as asked. The mocking of the database is something which probably needs some future adjustments>
+
+The  test_get_users_list_from_db is not working as it should be, an list of dicts called users has been created to simulate the database and be able to run the test.
+
+The use of pytest has not been included as these gave errors, which I have not been able to resolve until this moment.
