@@ -6,7 +6,7 @@ Let's partice now!
 Repository: unit-testing
 Type of Challenge: Learning
 Duration: 1 days
-Deadline: dd/mm/yy H:i AM/PM
+Deadline: 26/01/21 H:4:30PM
 Team challenge : solo
 Learning Objectives
 You will learn how to take advantage of unit testing to create robust code. At the end of the challenge, you will be able to:
