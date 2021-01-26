@@ -5,7 +5,7 @@ from unittest import mock
 from typing import List, Dict
 
 
-class ConnectionDatabaseError(Exception): 
+class ConnectionDatabaseError(Exception):
     pass
 
 
@@ -89,8 +89,8 @@ class TestDatabaseFunctions(unittest.TestCase):
         users = get_users_list_from_db("mock")
         #print(f'users: {len(users)}')
         assert len(users) >= 20  # verify if number of users in database is at least 20
-        for user in users:
-            for j in user.values():
+        for user in users:  # iterate over every user from the list users
+            for j in user.values():  # iterate over every value in the dict of each user
                 #print(f'value:{j}')
                 assert j != ''  # verify that each user has a username, birthday and role ==> each key has a value
 
